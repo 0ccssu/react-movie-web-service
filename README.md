@@ -12,7 +12,7 @@
 ## :thumbsup: Cool thing about ReactJS
 
 * Virtual Document Object Model(VDOM) - Element를 해당 Target id를 가진 태그를 찾아 그 안에 element를 렌더링한다 [App Element 참조](src/App.js) [Target 참조](src/index.js)
-* `Component`를 재사용할 수 있음!! :thumbsup:
+* Reusable - `Component`를 재사용할 수 있음!! :thumbsup:
 
 ### Component
 
