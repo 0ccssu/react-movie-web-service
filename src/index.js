@@ -16,7 +16,7 @@ ReactDOM.render(<React.StrictMode><App /></React.StrictMode>, document.getElemen
  *  최초 실행되는 React application은 한번에 하나의 컴퍼넌트만을 렌더링 해야하기 때문에
  *  다건의 렌더링이 발생 할 경우 마지막에 실행된 렌더 함수만을 실행하게 된다.
  *  다중컴퍼넌트가 필요하다면 컴퍼넌트간 계층을 만들어서 렌더링을 수행하라. 
- *  예) App.js 내부에 계층적으로 만든 HTML 컴퍼넌트를 렌더
+ *  예) App.js 내부에 계층적으로 만든 리액트 컴퍼넌트들을 렌더
  * </p>
  */
 // ReactDOM.render(<React.StrictMode><Potato /></React.StrictMode>, document.getElementById('root'));
