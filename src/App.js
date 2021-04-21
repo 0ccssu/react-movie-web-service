@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import Movie from "./Movie";
+import "./App.css";
 
 // Function -> Class component 로 변환(React.Component를 상속)
 // Component의 render 메서드와 state를 상속
@@ -31,18 +32,26 @@ class App extends React.Component {
     const { isLoading, movies } = this.state;
 
     return (
-      <div>
-        {isLoading ? "Loading..." : movies.map(movie => {
-          console.log(movie);
-          return <Movie key={movie.id}
-                        id={movie.id} 
-                        year={movie.year} 
-                        title={movie.title} 
-                        summary={movie.summary} 
-                        poster={movie.medium_cover_image} 
-                  />
-        })}
-      </div>
+      <section class="container">
+        {isLoading ? (
+        <div class="loader">
+          <span class="loader__text">Loading...</span>
+        </div>
+        ) : (
+          <div class="movies">
+            {movies.map(movie => {
+              console.log(movie);
+              return <Movie key={movie.id}
+                            id={movie.id} 
+                            year={movie.year} 
+                            title={movie.title} 
+                            summary={movie.summary} 
+                            poster={movie.medium_cover_image} 
+                      />
+            })}
+          </div>
+        )}
+      </section>
     )
   }
 }
