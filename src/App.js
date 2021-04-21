@@ -8,21 +8,23 @@ class App extends React.Component {
     state = {
         count: 0
     };
-    
+
     // button functions
+    // state는 직접적으로 변경하면 안된다. setState()를 사용하여 리액트가 뷰를 refresh하게 해야한다.
     add = () =>{
-      console.log("add");
+      this.setState(curr => ({count : curr.count +1}));
     };
 
     minus = () =>{
-      console.log("minus");
+      this.setState(curr => ({count : curr.count-1}));
     };
+
     // render method 오버라이딩
     render() {
         return (
           <div>
             <h1>
-              The number is {this.state.count}
+              The number is: {this.state.count}
             </h1>
             <button onClick={this.add}>Add</button>
             <button onClick={this.minus}>Minus</button>
