@@ -19,6 +19,17 @@
 * [index.js](src/index.js)내부의 `ReactDOM.render()`함수 내부의 `<App />`태그는 컴퍼넌트*Component*라 불리며, 이 컴퍼넌트는 HTML을 반환하는 각각의 자바스크립트 함수([App.js](src/App.js))로 인하여 렌더링 된다.
 * *Javascript*와 *HTML*의 조합을 할 때 사용하는 파일 확장자를 `*.jsx`를 사용한다.(react에서 파생된 개념)
 
+#### Component Life Cycle
+* [React Doc.](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
+1. Mounting
+   * 태어남
+   * `constructor()`, `static getDerivedStateFromProps()`, `render()`, `componentDitMount()`함수가 순차적으로 호출 됨.
+2. Updating
+   * 업데이트 시(`setState()`호출 등으로 인하여)
+   * `static getDerivedStateFromProps()`, `shouldComponentUpdate()`, `render()`, `getSnapshotBeforeUpdate()`, `componentDidUpdate()`함수가 순차적으로 호출 됨
+3. Unmounting
+   * 죽음
+
 ## :wrench: 문제 해결 사항
 
 * NodeJS 12 버전이 우분투에 설치가 되지 않아 참조한 [사이트](https://avisynth.tistory.com/23)

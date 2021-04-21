@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 // Function -> Class component 로 변환(React.Component를 상속)
 // Component의 render 메서드와 state를 상속
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    console.log("hello");
+  }
     // 변하는 속성의 데이터를 state에 저장
     state = {
         count: 0
@@ -19,8 +23,22 @@ class App extends React.Component {
       this.setState(curr => ({count : curr.count-1}));
     };
 
+    // 컴퍼넌트가 태어날 시
+    componentDidMount() {
+      console.log("component rendered");
+    }
+
+    // 컴퍼넌트가 업데이트 될 시(setState() 등으로)
+    componentDidUpdate(){
+      console.log("component updated");
+    }
+
+    componentWillUnmount(){
+      console.log("Good bye, cruel world");
+    }
     // render method 오버라이딩
     render() {
+        console.log("I am rendering");
         return (
           <div>
             <h1>
