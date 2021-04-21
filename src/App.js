@@ -33,6 +33,7 @@ class App extends React.Component {
       console.log("component updated");
     }
 
+    // 컴퍼넌트가 사라질 시
     componentWillUnmount(){
       console.log("Good bye, cruel world");
     }

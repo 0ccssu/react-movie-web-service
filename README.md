@@ -23,12 +23,14 @@
 * [React Doc.](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
 1. Mounting
    * 태어남
-   * `constructor()`, `static getDerivedStateFromProps()`, `render()`, `componentDitMount()`함수가 순차적으로 호출 됨.
+   * `constructor()`, `static getDerivedStateFromProps()`, `render()`, `componentDitMount()`함수가 순차적으로 호출됨.
 2. Updating
    * 업데이트 시(`setState()`호출 등으로 인하여)
-   * `static getDerivedStateFromProps()`, `shouldComponentUpdate()`, `render()`, `getSnapshotBeforeUpdate()`, `componentDidUpdate()`함수가 순차적으로 호출 됨
+   * `static getDerivedStateFromProps()`, `shouldComponentUpdate()`, `render()`, `getSnapshotBeforeUpdate()`, `componentDidUpdate()`함수가 순차적으로 호출됨
 3. Unmounting
    * 죽음
+   * `componentWillUnmount()` 함수가 호출됨
+
 
 ## :wrench: 문제 해결 사항
 
