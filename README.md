@@ -1,6 +1,7 @@
 # ReactJS로 영화 웹 서비스 만들기
 
 * NomadCoders의 ReactJS로 영화 앱서비스 만들기 강좌를 공부하기 위한 리포지토리입니다.
+* [배포](https://achelous1.github.io/react-movie-web-service)
 
 ## :computer: Set-up
 
