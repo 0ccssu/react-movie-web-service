@@ -6,6 +6,7 @@ function Movie({id, year, title, summary, poster}) {
     return <h4>{title}</h4>
 }
 
+// validation
 Movie.propTypes = {
     id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
