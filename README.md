@@ -33,6 +33,8 @@
    * 죽음
    * `componentWillUnmount()` 함수가 호출됨
 
+#### Styling the Component
+* 컴퍼넌트의 스타일을 변경하는 방법은 기존의 css를 적용하는 방법 또는 `style={{}}`을 사용하여 자바스크립트 형식으로도 적용이 가능하다. eg. `style={{ backgroundColor: "red" }}`로 표현
 
 ## :wrench: 문제 해결 사항
 
