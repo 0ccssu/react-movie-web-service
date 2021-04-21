@@ -36,6 +36,12 @@
 #### Styling the Component
 * 컴퍼넌트의 스타일을 변경하는 방법은 기존의 css를 적용하는 방법 또는 `style={{}}`을 사용하여 자바스크립트 형식으로도 적용이 가능하다. eg. `style={{ backgroundColor: "red" }}`로 표현
 
+### Github page에 배포하기
+1. Github pages 패키지 설치 `npm i gh-pages`
+2. `package.json`파일에 `homepage` 및 배포할 Github 페이지 주소 추가
+3. `package.json`파일 -> scripts 하위에 `deploy`항목 추가 `gh-pages -d {$directory-name}`
+4. `package.json`파일 -> scripts 하위에 `predeploy`항목 추가 `npm run build`
+
 ## :wrench: 문제 해결 사항
 
 * NodeJS 12 버전이 우분투에 설치가 되지 않아 참조한 [사이트](https://avisynth.tistory.com/23)
