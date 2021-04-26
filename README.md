@@ -9,8 +9,9 @@
 * [NPX](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b#:~:text=npx%20is%20a%20tool%20intended,executables%20hosted%20on%20the%20registry.) 설치 `npm install npx -g`
 * `npx create-react-app {프로젝트명}`으로 리액트 앱 생성
 * 생성 된 파일 중 `package.json`파일 내부의 "scripts" 항목 중 `test`와 `eject` 항목 삭제
-* `prop-types` 라이브러리 설치 `npm i prop-types`
-* `axios` 라이브러리 설치 `npm i axios`
+* `prop-types` 라이브러리 설치 `npm i prop-types` -- validation 라이브러리
+* `axios` 라이브러리 설치 `npm i axios` -- 비동기라이브러리
+* `react-router-dom` 라이브러리 설치 `npm install react-router-dom`
 
 ## :thumbsup: Cool thing about ReactJS
 
@@ -42,6 +43,12 @@
 2. `package.json`파일에 `homepage` 및 배포할 Github 페이지 주소 추가
 3. `package.json`파일 -> scripts 하위에 `deploy`항목 추가 `gh-pages -d {$directory-name}`
 4. `package.json`파일 -> scripts 하위에 `predeploy`항목 추가 `npm run build`
+5. `terminal`에서 `npm run deploy` 명령
+
+### 라우터
+* ReactJS의 url 라우팅 기능
+  * `HashRouter`와 `Route` 사용
+  * 같은 url상 그룹의 주소일 경우 모든 컴퍼넌트를 렌더링한다
 
 ## :wrench: 문제 해결 사항
 
