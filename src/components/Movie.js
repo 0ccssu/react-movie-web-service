@@ -6,20 +6,23 @@ import "./Movie.css";
 // state를 필요로 하지 않을때는 class로 정의하지 않아도 된다
 function Movie({id, year, title, summary, poster, genres}) {
     return (
-        <Link to={{
-           pathname: "movie-detail",
-           state: {
-               year,
-               title,
-               summary,
-               poster,
-               genres
-           } 
-        }}>
+        
             <div className="movie">
                 <img src={poster} alt={title} title={title}/>
                 <div className="movie__data">
-                    <h3 className="movie__title">{title}</h3>
+                    <Link to={{
+                                pathname: "movie-detail",
+                                state: {
+                                    id,
+                                    year,
+                                    title,
+                                    summary,
+                                    poster,
+                                    genres
+                                } 
+                                }}>
+                        <h3 className="movie__title">{title}</h3>
+                    </Link>
                     <h5 className="movie__year">{year}</h5>
                     <ul className="movie__genres"> {genres.map((genre, idx) => 
                         <li key={idx} className="genres__name">{genre}</li>
@@ -28,7 +31,6 @@ function Movie({id, year, title, summary, poster, genres}) {
                     <p className="movie__summary">{summary.slice(0, 140)}...</p>
                 </div>
             </div>
-        </Link>
         
     )
 }
