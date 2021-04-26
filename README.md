@@ -47,8 +47,13 @@
 
 ### 라우터
 * ReactJS의 url 라우팅 기능
-  * `HashRouter`와 `Route` 사용
-  * 같은 url상 그룹의 주소일 경우 모든 컴퍼넌트를 렌더링한다
+  * `*Router`와 `Route` 사용
+  * 같은 url상 그룹의 주소일 경우 모든 컴퍼넌트를 렌더링한다.
+    * `exact={true}`로 정확하게 같은 해당 주소일 경우 컴퍼넌트를 렌더링 할 수 있게 한다.
+    * `Router`에는 종류가 다양하며 (`HashRouter`, `BrowserRouter` 등) 각각 라우팅되는 방식이 다르다
+* 라우팅 시에는 `<a>`태그 대신 `react-router-dom`의 `Link` 컴퍼넌트를 사용하여 라우팅 하라 -- `<a>`태그는 페이지 전체를 refresh 해버리기 때문에 제대로 동작하지 않았다.
+  * `Link` 컴퍼넌트는 `*Router` 컴퍼넌트 내에 위치해야한다.
+
 
 ## :wrench: 문제 해결 사항
 
