@@ -37,6 +37,8 @@
 
 #### Styling the Component
 * 컴퍼넌트의 스타일을 변경하는 방법은 기존의 css를 적용하는 방법 또는 `style={{}}`을 사용하여 자바스크립트 형식으로도 적용이 가능하다. eg. `style={{ backgroundColor: "red" }}`로 표현
+* 컴퍼넌트에선 기존의 `class` 대신 `className`을 사용하여 css클래스를 적용한다.
+
 
 ### Github page에 배포하기
 1. Github pages 패키지 설치 `npm i gh-pages`
@@ -47,7 +49,7 @@
 
 ### 라우터
 * ReactJS의 url 라우팅 기능
-  * `*Router`와 `Route` 사용
+  * `*Router`와 `Route` 컴퍼넌트 사용
   * 같은 url상 그룹의 주소일 경우 모든 컴퍼넌트를 렌더링한다.
     * `exact={true}`로 정확하게 같은 해당 주소일 경우 컴퍼넌트를 렌더링 할 수 있게 한다.
     * `Router`에는 종류가 다양하며 (`HashRouter`, `BrowserRouter` 등) 각각 라우팅되는 방식이 다르다
