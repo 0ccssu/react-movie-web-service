@@ -6,10 +6,9 @@ function About(props) {
   return (
     <div className="about__container">
       <span>
-        “Freedom is the freedom to say that two plus two make four. If that is
-        granted, all else follows.”
+        리액트로 영화 사이트 만들기
       </span>
-      <span>− George Orwell, 1984</span>
+      <span>2201</span>
     </div>
   );
 }
